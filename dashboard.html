@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SOFT-EFSRT</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">S</div>
+                <span>SOFT-EFSRT</span>
+            </div>
+
+            <p class="menu-title">MENÚ PRINCIPAL</p>
+
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-link active">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="#" class="menu-link">
+                    <span>♙</span> Estudiantes
+                </a>
+
+                <a href="#" class="menu-link">
+                    <span>▤</span> Registros EFSRT
+                </a>
+
+                <a href="#" class="menu-link">
+                    <span>▣</span> Reportes
+                </a>
+
+                <a href="#" class="menu-link">
+                    <span>⚙</span> Configuración
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-link">
+                    ↪ Cerrar sesión
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+
+            <!-- ENCABEZADO -->
+            <header class="topbar">
+                <div>
+                    <h1>Panel de control</h1>
+                    <p>Bienvenido al sistema SOFT-EFSRT</p>
+                </div>
+
+                <div class="user-profile">
+                    <div class="user-avatar">A</div>
+                    <div>
+                        <strong>Administrador</strong>
+                        <span>Usuario del sistema</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- BIENVENIDA -->
+            <section class="welcome-section">
+                <div>
+                    <h2>¡Bienvenido!</h2>
+                    <p>
+                        Administra y supervisa las actividades
+                        de las experiencias formativas.
+                    </p>
+                </div>
+                <span class="welcome-icon">✦</span>
+            </section>
+
+            <!-- TARJETAS ESTADÍSTICAS -->
+            <section class="statistics">
+
+                <article class="stat-card">
+                    <div class="stat-icon blue">♙</div>
+                    <p>Total de estudiantes</p>
+                    <h3>120</h3>
+                    <span>Estudiantes registrados</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon green">▤</div>
+                    <p>Registros EFSRT</p>
+                    <h3>85</h3>
+                    <span>Registros realizados</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon orange">◷</div>
+                    <p>En seguimiento</p>
+                    <h3>24</h3>
+                    <span>Actividades pendientes</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon purple">✓</div>
+                    <p>Finalizados</p>
+                    <h3>61</h3>
+                    <span>Procesos completados</span>
+                </article>
+
+            </section>
+
+            <!-- ACTIVIDAD RECIENTE -->
+            <section class="recent-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Actividad reciente</h2>
+                        <p>Resumen de los registros del sistema</p>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Estudiante</th>
+                                <th>Actividad</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Registro EFSRT</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>María López</td>
+                                <td>Seguimiento</td>
+                                <td><span class="status completed">Completado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Carlos Ramos</td>
+                                <td>Registro EFSRT</td>
+                                <td><span class="status progress">En proceso</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <footer class="footer">
+                SOFT-EFSRT © 2026 | Sistema de gestión académica
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
