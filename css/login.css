@@ -1,0 +1,277 @@
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+/* =================================
+   CONTENEDOR PRINCIPAL
+================================= */
+
+.login-container {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 620px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+/* =================================
+   PANEL IZQUIERDO
+================================= */
+
+.login-information {
+    background: linear-gradient(145deg, #0f2747, #164e83);
+    color: #ffffff;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    background: #38bdf8;
+    color: #0f2747;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.information-content {
+    max-width: 400px;
+}
+
+.tag {
+    display: inline-block;
+    color: #7dd3fc;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.information-content h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.information-content p {
+    color: #dbeafe;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.information-footer {
+    color: #bfdbfe;
+    font-size: 12px;
+}
+
+.mobile-brand {
+    display: none;
+}
+
+/* =================================
+   PANEL DERECHO
+================================= */
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 370px;
+}
+
+.welcome-text {
+    color: #0284c7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.login-form h2 {
+    color: #0f2747;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.form-description {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+/* =================================
+   CAMPOS DEL FORMULARIO
+================================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #334155;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+}
+
+/* =================================
+   OPCIONES
+================================= */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0 25px;
+    font-size: 12px;
+}
+
+.remember {
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.forgot-password {
+    color: #0284c7;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* =================================
+   BOTÓN
+================================= */
+
+.login-button {
+    width: 100%;
+    height: 50px;
+    background: #0f2747;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* =================================
+   PIE DEL FORMULARIO
+================================= */
+
+.login-footer {
+    text-align: center;
+    margin-top: 45px;
+    color: #94a3b8;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* =================================
+   DISEÑO RESPONSIVE
+================================= */
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .login-information {
+        display: none;
+    }
+
+    .login-form-container {
+        padding: 35px 25px;
+    }
+
+    .mobile-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #0f2747;
+        font-weight: bold;
+        margin-bottom: 35px;
+    }
+
+    .information-content h1 {
+        font-size: 32px;
+    }
+}
